@@ -1,0 +1,52 @@
+Color Theory
+Color has 3 properties:
+Hue
+
+- The name of the color
+- Ex: red, blue, green, yellow, orange, etc.
+
+Saturation
+
+- The intensity of the color
+- Ex: bright red, dull red, etc.
+
+Value
+
+- The lightness or darkness of the color
+- Ex: light blue, dark blue, etc.
+
+HSV (Hue, Saturation, Value) is a color model used in computer graphics and image processing to represent colors. It is a cylindrical representation of the RGB (Red, Green, Blue) color model, where the three components are transformed to different dimensions: hue, saturation, and value.
+
+Here's a brief explanation of each component in the HSV color space:
+
+Hue: It represents the dominant wavelength of light and is often associated with the basic color names such as red, orange, yellow, green, blue, and purple. The hue value ranges from 0 to 360 degrees or 0 to 1 in some software implementations.
+
+Saturation: It refers to the intensity or purity of the color. A saturation value of 0 results in a grayscale color (no hue), while a saturation value of 1 represents the fully saturated color. Saturation is measured as a percentage or a value between 0 and 1.
+
+Value: It represents the brightness or lightness of the color. A value of 0 corresponds to black, while a value of 1 corresponds to white. Values between 0 and 1 represent varying shades of brightness.
+
+The HSV color space is often preferred over the RGB color space for certain applications, such as color selection tools and image editing software, because it separates the color information from the brightness information. This separation makes it easier to manipulate and control colors, as changes in the hue and saturation components have predictable effects on the appearance of the color.
+
+Viola Jones Algorithm
+
+Positives and Negatives and Pre Trained Model for Face Detection
+
+- Positive: An image that contains the object of interest
+- Negative: An image that does not contain the object of interest
+- Pre Trained Model: A model that has been trained on a large dataset and can be used to extract features from new images
+XML File: A file that contains the features of the object of interest
+
+detectMultiScale- Detects objects of different sizes in the input image. The detected objects are returned as a list of rectangles.
+
+https://stackoverflow.com/questions/20801015/recommended-values-for-opencv-detectmultiscale-parameters
+
+- scaleFactor – Parameter specifying how much the image size is reduced at each image scale.
+- minNeighbors – Parameter specifying how many neighbors each candidate rectangle should have to retain it.
+what is candidate rectangle? A candidate rectangle is a rectangle that might contain an object we are looking for. The algorithm will look at each candidate rectangle and decide whether it is a positive (object) or negative (no object) sample. The algorithm will then discard the negative samples and keep the positive ones.
+what is a neighbor? A neighbor is a rectangle that is found to be overlapping with the candidate rectangle. The algorithm will look at each neighbor and decide whether it is a positive (object) or negative (no object) sample. The algorithm will then discard the negative samples and keep the positive ones.
+This parameter will affect the quality of the detected faces. Higher value results in less detections but with higher quality. 3~6 is a good value for it.
+
+
+Object Detection
+Object Classification
+Object Segmentation
